@@ -1,0 +1,164 @@
+[
+    {
+        "id": 1,
+        "estate_title": "Luxury Villa with Ocean View",
+        "image": "villa_image.jpg",
+        "segment_name": "Villas",
+        "description": "Magnificent villa with breathtaking views of the ocean, featuring luxurious amenities and spacious interiors.",
+        "price": "$5,000,000",
+        "status": "For Sale",
+        "area": "6000 sqft",
+        "location": "Malibu, California",
+        "facilities": [
+            "Infinity pool",
+            "Home theater",
+            "Spa",
+            "Gym",
+            "Private beach access"
+        ]
+    },
+    {
+        "id": 2,
+        "estate_title": "Penthouse in the Sky",
+        "image": "penthouse_image.jpg",
+        "segment_name": "Penthouses",
+        "description": "Stunning penthouse offering panoramic views of the city skyline, meticulously designed with top-notch finishes.",
+        "price": "$3,800,000",
+        "status": "For Sale",
+        "area": "4000 sqft",
+        "location": "New York City, New York",
+        "facilities": [
+            "Rooftop terrace",
+            "Jacuzzi",
+            "Fitness center",
+            "Concierge service",
+            "Smart home technology"
+        ]
+    },
+    {
+        "id": 3,
+        "estate_title": "Luxurious Beachfront Mansion",
+        "image": "mansion_image.jpg",
+        "segment_name": "Mansions",
+        "description": "Exquisite mansion nestled along the shores, offering unparalleled luxury and privacy amidst stunning natural beauty.",
+        "price": "$8,500,000",
+        "status": "For Sale",
+        "area": "8000 sqft",
+        "location": "Miami Beach, Florida",
+        "facilities": [
+            "Private dock",
+            "Tennis court",
+            "Wine cellar",
+            "Guest house",
+            "Lush gardens"
+        ]
+    },
+    {
+        "id": 4,
+        "estate_title": "Contemporary Urban Loft",
+        "image": "loft_image.jpg",
+        "segment_name": "Beachfront properties",
+        "description": "Chic and modern loft space in the heart of downtown, boasting industrial-inspired design and high-end finishes.",
+        "price": "$1,200,000",
+        "status": "For Sale",
+        "area": "2000 sqft",
+        "location": "San Francisco, California",
+        "facilities": [
+            "Open floor plan",
+            "Exposed brick walls",
+            "High ceilings",
+            "Designer kitchen",
+            "Smart home automation"
+        ]
+    },
+    {
+        "id": 5,
+        "estate_title": "Private Island Retreat",
+        "image": "island_image.jpg",
+        "segment_name": "Private Islands",
+        "description": "Escape to your own private island paradise, featuring luxurious accommodations and pristine natural surroundings.",
+        "price": "$12,000,000",
+        "status": "For rent",
+        "area": "10 acres",
+        "location": "Caribbean Sea",
+        "facilities": [
+            "Private beaches",
+            "Tropical gardens",
+            "Villa residences",
+            "Yacht dock",
+            "Helipad"
+        ]
+    },
+    {
+        "id": 6,
+        "estate_title": "Historic Castle Estate",
+        "image": "castle_image.jpg",
+        "segment_name": "resorts",
+        "description": "Step into a world of royalty and grandeur with this historic castle estate, meticulously restored to its former glory.",
+        "price": "$15,000,000",
+        "status": "For rent",
+        "area": "15,000 sqft",
+        "location": "Loire Valley, France",
+        "facilities": [
+            "Ballroom",
+            "Library",
+            "Wine cellar",
+            "Chapel",
+            "Majestic gardens"
+        ]
+    },
+    {
+        "id": 7,
+        "estate_title": "Luxury Ski Chalet",
+        "image": "chalet_image.jpg",
+        "segment_name": "mansions",
+        "description": "Indulge in the ultimate alpine retreat with this stunning ski chalet, offering ski-in/ski-out access and lavish amenities.",
+        "price": "$4,500,000",
+        "status": "For Sale",
+        "area": "5000 sqft",
+        "location": "Aspen, Colorado",
+        "facilities": [
+            "Sauna",
+            "Ski room",
+            "Home theater",
+            "Fireplace",
+            "Mountain views"
+        ]
+    },
+    {
+        "id": 8,
+        "estate_title": "Modern Waterfront Residence",
+        "image": "waterfront_image.jpg",
+        "segment_name": "Beachfront properties",
+        "description": "Sleek and contemporary waterfront residence with stunning views of the bay, perfect for luxurious coastal living.",
+        "price": "$6,800,000",
+        "status": "For Sale",
+        "area": "5500 sqft",
+        "location": "Sydney, Australia",
+        "facilities": [
+            "Infinity pool",
+            "Boat dock",
+            "Outdoor kitchen",
+            "Media room",
+            "Smart home technology"
+        ]
+    },
+    {
+        "id": 9,
+        "estate_title": "Exclusive Golf Course Estate",
+        "image": "golf_estate_image.jpg",
+        "segment_name": "resorts",
+        "description": "Experience luxury living on the fairways with this exclusive golf course estate, featuring impeccable design and amenities.",
+        "price": "$7,200,000",
+        "status": "For rent",
+        "area": "7000 sqft",
+        "location": "Scottsdale, Arizona",
+        "facilities": [
+            "Private putting green",
+            "Gourmet kitchen",
+            "Wine cellar",
+            "Home office",
+            "Outdoor living spaces"
+        ]
+    }
+]
