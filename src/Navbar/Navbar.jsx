@@ -27,7 +27,7 @@ const Navbar = () => {
                             <li><a>User Profile</a></li>
                         </ul>
                     </div>
-                    <h1 className="btn btn-ghost text-xl text-[#053A37] font-bold">Nokkhotro real estate</h1>
+                    <h1 className="btn btn-ghost text-xl text-[#053A37] font-bold font-vidaloka">Nokkhotro real estate</h1>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
