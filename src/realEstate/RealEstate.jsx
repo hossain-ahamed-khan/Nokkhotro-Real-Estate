@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-
+import PropTypes from 'prop-types';
 
 const RealEstate = ({ estate }) => {
 
-    const { id, estate_title, image, segment_name, description, price, status, area, location, facilities } = estate;
+    const { id, estate_title, image, price, status } = estate;
     return (
         <div className="mx-auto">
             <Link to={`/estate/${id}`}>
@@ -20,5 +20,9 @@ const RealEstate = ({ estate }) => {
         </div>
     );
 };
+
+RealEstate.propTypes = {
+    estate: PropTypes.object,
+}
 
 export default RealEstate;

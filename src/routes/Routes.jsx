@@ -4,6 +4,9 @@ import Home from "../pages/Home/Home.jsx";
 import Login from "../pages/Login/Login.jsx";
 import Register from "../pages/Register/Register.jsx";
 import CardDetails from "../pages/Card-details/CardDetails.jsx";
+import UserProfile from "../pages/User-Profile/UserProfile.jsx";
+import UpdateProfile from "../pages/Update-profile/UpdateProfile.jsx";
+import PrivateRoute from "./PrivateRoute.jsx";
 
 
 const router = createBrowserRouter([
@@ -29,6 +32,14 @@ const router = createBrowserRouter([
                 path: "/register",
                 element: <Register></Register>
             },
+            {
+                path: "/update-profile",
+                element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
+            },
+            {
+                path: "/user-profile",
+                element: <PrivateRoute><UserProfile></UserProfile></PrivateRoute>
+            }
         ]
     },
 ]);
