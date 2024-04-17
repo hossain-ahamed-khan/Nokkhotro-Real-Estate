@@ -8,8 +8,8 @@ const Home = () => {
 
     return (
         <>
-            <div>
-                <div className="carousel w-full">
+            <div className="w-5/6 mx-auto my-12">
+                <div className="carousel rounded-xl">
                     <div id="slide1" className="carousel-item relative w-full">
                         <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" />
                         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -40,7 +40,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mx-auto my-16">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mx-auto my-16 w-5/6">
                 {
                     realEstates.map(estate => <RealEstate key={estate.id} estate={estate}></RealEstate>)
                 }

@@ -11,7 +11,7 @@ const CardDetails = () => {
     const { estate_title, image, segment_name, description, price, status, area, location, facilities } = estate;
 
     return (
-        <div className="font-vidaloka text-[#053A37] flex flex-col lg:flex-row my-16 gap-8">
+        <div className="w-5/6 mx-auto font-vidaloka text-[#053A37] flex flex-col lg:flex-row my-16 gap-8">
             <div className="w-full lg:w-1/2">
                 <img className="w-full mx-auto rounded-xl" src={image} alt="" />
             </div>
