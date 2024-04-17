@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        vidaloka: '"Vidaloka", serif',
+      }
+    },
   },
   plugins: [require("daisyui")],
 }
