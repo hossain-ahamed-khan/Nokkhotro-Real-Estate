@@ -44,12 +44,6 @@ const AuthProvider = ({ children }) => {
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser);
-            if (currentUser) {
-                toast("sign in successfully");
-            }
-            else {
-                toast("Log out successfully");
-            }
             setLoading(false);
         });
         return () => {
