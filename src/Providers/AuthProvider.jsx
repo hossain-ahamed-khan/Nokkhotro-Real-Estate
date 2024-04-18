@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import app from "../firebase/firebase.config";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export const AuthContext = createContext(null);
 
 const auth = getAuth(app);
@@ -41,6 +44,12 @@ const AuthProvider = ({ children }) => {
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser);
+            if (currentUser) {
+                toast("sign in successfully");
+            }
+            else {
+                toast("Log out successfully");
+            }
             setLoading(false);
         });
         return () => {
@@ -61,6 +70,7 @@ const AuthProvider = ({ children }) => {
     return (
         <AuthContext.Provider value={authInfo}>
             {children}
+            <ToastContainer />
         </AuthContext.Provider>
     );
 };

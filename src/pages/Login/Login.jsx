@@ -1,9 +1,13 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
-
+import { FaEyeSlash } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
 
 const Login = () => {
+    const [showPassword, setShowPassword] = useState(false);
+    const [loginError, setLoginError] = useState('');
+
     const { signIn, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
     const navigate = useNavigate();
 
@@ -19,6 +23,7 @@ const Login = () => {
             })
             .catch(error => {
                 console.error(error);
+                setLoginError("Incorrect Email or Password");
             })
     }
 
@@ -59,12 +64,25 @@ const Login = () => {
                             <input type="email" name="email" placeholder="email" className="input input-bordered" required />
                         </div>
 
-                        <div className="form-control">
+                        <div className="relative form-control">
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+                            <input
+                                type={showPassword ? "text" : "password"}
+                                name="password"
+                                placeholder="password"
+                                className="input input-bordered" required />
+                            <span className="absolute right-3 bottom-3" onClick={() => setShowPassword(!showPassword)}>
+                                {
+                                    showPassword ? <FaEyeSlash /> : <FaEye />
+                                }
+                            </span>
                         </div>
+
+                        {
+                            loginError && <p className="text-red-700">{loginError}</p>
+                        }
 
                         <div className="form-control mt-6">
                             <button className="btn bg-[#053a37b9] text-slate-100">Login</button>

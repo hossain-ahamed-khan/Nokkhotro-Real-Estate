@@ -7,12 +7,15 @@ import CardDetails from "../pages/Card-details/CardDetails.jsx";
 import UserProfile from "../pages/User-Profile/UserProfile.jsx";
 import UpdateProfile from "../pages/Update-profile/UpdateProfile.jsx";
 import PrivateRoute from "./PrivateRoute.jsx";
+import Contact from "../pages/Contact/Contact.jsx";
+import ErrorPage from "../pages/ErrorPage/ErrorPage.jsx";
 
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Root></Root>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
@@ -39,6 +42,10 @@ const router = createBrowserRouter([
             {
                 path: "/user-profile",
                 element: <PrivateRoute><UserProfile></UserProfile></PrivateRoute>
+            },
+            {
+                path: "/contact",
+                element: <Contact></Contact>
             }
         ]
     },

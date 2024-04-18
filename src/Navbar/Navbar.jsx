@@ -25,6 +25,7 @@ const Navbar = () => {
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/update-profile">Update Profile</Link></li>
                             <li><Link to="/user-profile">User Profile</Link></li>
+                            <li><Link to="/contact">Contact</Link></li>
                         </ul>
                     </div>
                     <h1 className="text-xl text-[#053A37] font-bold font-vidaloka">Nokkhotro real estate</h1>
@@ -34,6 +35,7 @@ const Navbar = () => {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/update-profile">Update Profile</Link></li>
                         <li><Link to="/user-profile">User Profile</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </div>
 
