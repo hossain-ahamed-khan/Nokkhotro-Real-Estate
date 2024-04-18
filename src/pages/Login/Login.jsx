@@ -4,8 +4,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 
 
 const Login = () => {
-
-    const { signIn } = useContext(AuthContext);
+    const { signIn, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const handleLogin = e => {
@@ -15,12 +14,35 @@ const Login = () => {
         const password = form.get('password');
 
         signIn(email, password)
-            .then(result => {
-                console.log(result.user);
+            .then(() => {
                 navigate("/");
             })
             .catch(error => {
                 console.error(error);
+            })
+    }
+
+    // google login 
+
+    const handleGoogleSignIn = () => {
+        signInWithGoogle()
+            .then(() => {
+                navigate("/");
+            })
+            .catch(error => {
+                console.log('error', error.message);
+            })
+    }
+
+    // github login 
+
+    const handleGithubSignIn = () => {
+        signInWithGithub()
+            .then(() => {
+                navigate("/");
+            })
+            .catch(error => {
+                console.log('error', error.message);
             })
     }
 
@@ -50,8 +72,8 @@ const Login = () => {
                     </form>
 
                     <div className="text-center">
-                        <button className="w-2/5 btn btn-outline btn-success mr-2">Google login</button>
-                        <button className="w-2/5 btn btn-outline ">Github login</button>
+                        <button onClick={handleGoogleSignIn} className="w-2/5 btn btn-outline btn-success mr-2">Google login</button>
+                        <button onClick={handleGithubSignIn} className="w-2/5 btn btn-outline ">Github login</button>
                     </div>
 
                     <div className="text-center my-6">

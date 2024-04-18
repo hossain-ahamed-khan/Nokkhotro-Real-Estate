@@ -40,6 +40,10 @@ const Navbar = () => {
                 {
                     user ?
                         <div className="navbar-end">
+                            <div className="tooltip tooltip-left" data-tip={user.displayName}>
+                                <img className="w-10 h-10 rounded-full mr-4" src={user.photoURL} alt="" />
+                            </div>
+
                             <Link onClick={handleLogOut} to="" className="btn">Log out</Link>
                         </div>
                         :
